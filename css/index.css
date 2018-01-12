@@ -1,0 +1,63 @@
+
+body{
+	background-image: linear-gradient(rgb(184, 222, 250),rgba(184, 222, 250, 0.4));
+}
+.page_header{
+	width:100%;
+	height: 56px;
+	background-color: rgba(255,255,255,0.9);
+	position: relative;
+}
+.page_header::before,
+.page_header::after,
+.wave_tail::before,
+.wave_tail::after{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: -34px;
+	width:100%;
+	height: 17px;
+	background-size: 160px 160px;
+	background-repeat: repeat-x;
+	background-image: radial-gradient(circle at center -65px, var(--color), var(--color) 80px, transparent 80px, transparent);
+}
+.page_header::after,
+.wave_tail::after{
+	bottom:-17px;
+	background-image: radial-gradient(circle at center 90px,transparent, transparent 80px, var(--color) 80px, var(--color));
+	background-position: -80px 0;
+}
+.page_header::before,
+.page_header::after{
+	--color: rgba(255,255,255,0.9);
+}
+.wave_tail::before,
+.wave_tail::after{
+	--color: rgba(255,255,255,0.7);
+}
+.wave_tail{
+	position: absolute;
+	width: 100%;
+	bottom: -10px;
+}
+.logo{
+	width: 30px;
+	height: 30px;
+	border: 15px solid #F7B;
+	border-radius: 50%;
+	position: absolute;
+	top:15px;
+	left: 210px;
+}
+.logo::after{
+	content: "朱糖";
+	position: absolute;
+	top: 8px;
+	left: 116px;
+	width: 0px;
+	font-family: "STXingkai";
+	font-size: 30px;
+	text-indent: -50px;
+	line-height: 14px;
+}
