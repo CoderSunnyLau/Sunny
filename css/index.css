@@ -1,5 +1,8 @@
 
 body{
+	background-image: -moz-linear-gradient(rgb(184, 222, 250),rgba(184, 222, 250, 0.4));
+	background-image: -webkit-linear-gradient(rgb(184, 222, 250),rgba(184, 222, 250, 0.4));
+	background-image: -ms-linear-gradient(rgb(184, 222, 250),rgba(184, 222, 250, 0.4));
 	background-image: linear-gradient(rgb(184, 222, 250),rgba(184, 222, 250, 0.4));
 }
 .page_header{
@@ -20,11 +23,19 @@ body{
 	height: 17px;
 	background-size: 160px 160px;
 	background-repeat: repeat-x;
+	background-image: -moz-radial-gradient(circle at center -65px, var(--color), var(--color) 80px, transparent 80px, transparent);
+	background-image: -webkit-radial-gradient(circle at center -65px, var(--color), var(--color) 80px, transparent 80px, transparent);
+	background-image: -o-radial-gradient(circle at center -65px, var(--color), var(--color) 80px, transparent 80px, transparent);
+	background-image: -ms-radial-gradient(circle at center -65px, var(--color), var(--color) 80px, transparent 80px, transparent);
 	background-image: radial-gradient(circle at center -65px, var(--color), var(--color) 80px, transparent 80px, transparent);
 }
 .page_header::after,
 .wave_tail::after{
 	bottom:-17px;
+	background-image: -moz-radial-gradient(circle at center 90px,transparent, transparent 80px, var(--color) 80px, var(--color));
+	background-image: -webkit-radial-gradient(circle at center 90px,transparent, transparent 80px, var(--color) 80px, var(--color));
+	background-image: -o-radial-gradient(circle at center 90px,transparent, transparent 80px, var(--color) 80px, var(--color));
+	background-image: -ms-radial-gradient(circle at center 90px,transparent, transparent 80px, var(--color) 80px, var(--color));
 	background-image: radial-gradient(circle at center 90px,transparent, transparent 80px, var(--color) 80px, var(--color));
 	background-position: -80px 0;
 }
@@ -53,11 +64,11 @@ body{
 .logo::after{
 	content: "朱糖";
 	position: absolute;
-	top: 8px;
+	top: 12px;
 	left: 116px;
 	width: 0px;
 	font-family: "STXingkai";
 	font-size: 30px;
 	text-indent: -50px;
-	line-height: 14px;
+	line-height: 8px;
 }
